@@ -1,0 +1,141 @@
+.doctor{
+    flex: 4;
+    padding: 20px;
+    overflow: visible ;
+}
+
+.doctorTitleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.doctorAddBtn{
+
+    border: none;
+    padding: 5px;
+    background-color: teal;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+
+.doctorContainer{
+    display: flex;
+    margin-top: 20px;
+}
+
+.doctorShow{
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.doctorUpdate{
+    flex: 1;
+    padding: 20px;
+    margin-left: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.doctorShowTop{
+    display: flex;
+    align-items: center;
+    
+}
+
+.doctorShowTopTitle{
+    display: flex;
+    flex-direction: column;
+}
+
+.doctorShowName{
+    font-weight: 600;
+}
+
+.doctorShowOccupation{
+    font-weight: 300;
+}
+
+.doctorShowTitle{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(175, 170, 170);
+}
+
+.doctorShowDetail{
+    margin-bottom: 1.5rem;
+}
+
+.doctorShowInfo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    color: #444;
+}
+
+.doctorShowIcon{
+    font-size: 1.5rem !important;
+}
+
+.doctorShowInfoTitle{
+    margin-left: 10px;
+}
+.doctorUpdateTitle{
+    font-size: 24px;
+}
+.doctorUpdateForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.doctorUpdatePersonal, .doctorUpdateContact{
+    margin-bottom: 1.5rem;
+}
+.doctorUpdateItem{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.doctorShowInfo2,.doctorUpdateItem2{
+    display: grid;
+    grid-template-columns: repeat(2, 49.26%);
+    gap: 1rem;
+}
+
+.doctorShowInfo3,.doctorUpdateItem3{
+    display: grid;
+    grid-template-columns: repeat(3, 32.32%);
+    gap: 1rem;
+}
+.doctorShowInfo4,.doctorUpdateItem4{
+    display: grid;
+    grid-template-columns: repeat(4, 23.87%);
+    gap: 1rem;
+}
+
+.doctorUpdateItem>label{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.doctorUpdateInput{
+    border: none;
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid gray;
+    background: transparent;
+}
+
+.doctorUpdateBtn{
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    background-color: darkblue;
+    color: white;
+    font-weight: 600;
+}

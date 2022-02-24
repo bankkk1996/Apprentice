@@ -1,0 +1,141 @@
+.patient{
+    flex: 4;
+    padding: 20px;
+    overflow: visible ;
+}
+
+.patientTitleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.patientAddBtn{
+
+    border: none;
+    padding: 5px;
+    background-color: teal;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+
+.patientContainer{
+    display: flex;
+    margin-top: 20px;
+}
+
+.patientShow{
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.patientUpdate{
+    flex: 1;
+    padding: 20px;
+    margin-left: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.patientShowTop{
+    display: flex;
+    align-items: center;
+    
+}
+
+.patientShowTopTitle{
+    display: flex;
+    flex-direction: column;
+}
+
+.patientShowName{
+    font-weight: 600;
+}
+
+.patientShowOccupation{
+    font-weight: 300;
+}
+
+.patientShowTitle{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(175, 170, 170);
+}
+
+.patientShowDetail{
+    margin-bottom: 1.5rem;
+}
+
+.patientShowInfo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    color: #444;
+}
+
+.patientShowIcon{
+    font-size: 1.5rem !important;
+}
+
+.patientShowInfoTitle{
+    margin-left: 10px;
+}
+.patientUpdateTitle{
+    font-size: 24px;
+}
+.patientUpdateForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.patientUpdatePersonal, .patientUpdateContact{
+    margin-bottom: 1.5rem;
+}
+.patientUpdateItem{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.patientShowInfo2,.patientUpdateItem2{
+    display: grid;
+    grid-template-columns: repeat(2, 49.26%);
+    gap: 1rem;
+}
+
+.patientShowInfo3,.patientUpdateItem3{
+    display: grid;
+    grid-template-columns: repeat(3, 32.32%);
+    gap: 1rem;
+}
+.patientShowInfo4,.patientUpdateItem4{
+    display: grid;
+    grid-template-columns: repeat(4, 23.87%);
+    gap: 1rem;
+}
+
+.patientUpdateItem>label{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.patientUpdateInput{
+    border: none;
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid gray;
+    background: transparent;
+}
+
+.patientUpdateBtn{
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    background-color: darkblue;
+    color: white;
+    font-weight: 600;
+}
