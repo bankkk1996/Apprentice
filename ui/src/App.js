@@ -16,7 +16,7 @@ import Staff from './pages/Staff/Staff'
 import NewStaff from './pages/NewStaff/NewStaff'
 import Symptoms from './pages/SymptomList/Symptoms'
 import Symptom from './pages/Symptom/Symptom';
-import NewSymptom from './pages/NewSympton/NewSymptom';
+import NewSymptom from './pages/NewSymptom/NewSymptom';
 
 function App(){
   return (
