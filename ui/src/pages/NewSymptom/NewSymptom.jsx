@@ -58,7 +58,7 @@ export default function NewSymptom() {
         SymptomsDetail: SymptomsDetail,
     };
     const response = await axios.post('http://127.0.0.1:8000/symptom',symptom).catch(err=>console.log(err));
-    // window.location.replace("http://localhost:3000/symptoms");
+    window.location.replace("http://localhost:3000/symptoms");
   };
 
   const options = [
@@ -88,11 +88,11 @@ export default function NewSymptom() {
           </div>
           <div className="newSymptomItem2">
             <div className="newSymptomItem">
-                <label>รายละเอียด:</label>
+                <label>ผู้ป่วย:</label>
                 <Select options={optionsP}  onChange={(value)=>setsP(value.value)} required/>
             </div>
             <div className="newSymptomItem">
-                <label>รายละเอียด:</label>
+                <label>เจ้าหน้าที่:</label>
                 <Select options={optionsS} onChange={(value)=>setsS(value.value)} required/>
             </div>
           </div>
