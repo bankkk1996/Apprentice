@@ -1,5 +1,6 @@
+from pyexpat import model
 from rest_framework import serializers
-from PhrApp.models import Locations, Patients, Doctors, Staffs
+from PhrApp.models import Locations, Patients, Doctors, Staffs, InitialSymptoms
 
 class LocationSerializer(serializers.ModelSerializer):
     class Meta:
@@ -88,5 +89,18 @@ class StaffSerializer(serializers.ModelSerializer):
             'Location',
             'MobilePhone',
             'Email',
+        ]
+        depth = 1
+
+class InitialSymptomSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = InitialSymptoms
+        fields =[
+            'id',
+            'Date',
+            'Staff',
+            'Patients',
+            'Symptoms',
+            'SymptomsDetail'
         ]
         depth = 1

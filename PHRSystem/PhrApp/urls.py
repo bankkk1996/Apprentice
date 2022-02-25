@@ -8,4 +8,6 @@ urlpatterns=[
     re_path(r'^doctor/([0-9]+)$',views.doctorApi),
     re_path(r'^staff$',views.staffApi),
     re_path(r'^staff/([0-9]+)$',views.staffApi),
+    re_path(r'^symptom$',views.symptomApi),
+    re_path(r'^symptom/([0-9]+)$',views.symptomApi),
 ]

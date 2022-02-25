@@ -1,0 +1,158 @@
+.symptom{
+    flex: 4;
+    padding: 20px;
+    overflow: visible ;
+}
+
+.symptomTitleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.symptomAddBtn{
+
+    border: none;
+    padding: 5px;
+    background-color: teal;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+
+.symptomContainer{
+    display: flex;
+    margin-top: 20px;
+}
+
+.symptomShow{
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.symptomUpdate{
+    flex: 1;
+    padding: 20px;
+    margin-left: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.symptomShowTop{
+    display: flex;
+    align-items: center;
+    
+}
+
+.symptomShowTopTitle{
+    display: flex;
+    flex-direction: column;
+}
+
+.symptomShowName{
+    font-weight: 600;
+}
+
+.symptomShowOccupation{
+    font-weight: 300;
+}
+
+.symptomShowTitle{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(175, 170, 170);
+}
+
+.symptomShowDetail{
+    margin-bottom: 1.5rem;
+}
+
+.symptomShowInfo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    color: #444;
+}
+
+.symptomShowIcon{
+    font-size: 1.5rem !important;
+}
+
+.symptomShowInfoTitle{
+    margin-left: 10px;
+}
+
+
+.symptomDetailUser{
+    display: grid;
+    grid-template-columns: repeat(2,49%);
+    gap: 1rem;
+}
+
+
+.symptomUpdateTitle{
+    font-size: 24px;
+}
+.symptomUpdateForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.symptomUpdatePersonal, .symptomUpdateContact{
+    margin-bottom: 1.5rem;
+}
+.symptomUpdateItem{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.symptomShowInfo2,.symptomUpdateItem2{
+    display: grid;
+    grid-template-columns: repeat(2, 49.26%);
+    gap: 1rem;
+}
+
+.symptomShowInfo3,.symptomUpdateItem3{
+    display: grid;
+    grid-template-columns: repeat(3, 32.32%);
+    gap: 1rem;
+}
+.symptomShowInfo4,.symptomUpdateItem4{
+    display: grid;
+    grid-template-columns: repeat(4, 23.87%);
+    gap: 1rem;
+}
+
+.symptomUpdateItem>label{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.symptomUpdateInput{
+    border: none;
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid gray;
+    background: transparent;
+}
+.symptomUpdateTextarea{
+    width: 100%;
+    height: 50px;
+    border: 1px solid gray;
+    background: transparent;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.symptomUpdateBtn{
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    background-color: darkblue;
+    color: white;
+    font-weight: 600;
+}

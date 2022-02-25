@@ -14,6 +14,9 @@ import NewDoctor from './pages/NewDoctor/NewDoctor'
 import Staffs from './pages/StaffList/Staffs'
 import Staff from './pages/Staff/Staff'
 import NewStaff from './pages/NewStaff/NewStaff'
+import Symptoms from './pages/SymptomList/Symptoms'
+import Symptom from './pages/Symptom/Symptom';
+import NewSymptom from './pages/NewSympton/NewSymptom';
 
 function App(){
   return (
@@ -31,6 +34,9 @@ function App(){
             <Route path='/staffs' element={<Staffs/>} />
             <Route path='/staff/:id' element={<Staff />} />
             <Route path='/newStaff' element={<NewStaff/>} />
+            <Route path='/symptoms' element={<Symptoms/>}/>
+            <Route path='/symptom/:id' element={<Symptom />} />
+            <Route path='/newSymptom' element={<NewSymptom />} />
           </Routes>
         </Router>
       

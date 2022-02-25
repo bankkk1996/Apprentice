@@ -3,8 +3,8 @@ from django.views.decorators.csrf import csrf_exempt
 from rest_framework.parsers import JSONParser
 from django.http.response import JsonResponse
 
-from PhrApp.models import Locations, Patients, Doctors, Staffs
-from PhrApp.serializers import LocationSerializer, PatientSerializer, DoctorSerializer, StaffSerializer
+from PhrApp.models import Locations, Patients, Doctors, Staffs, InitialSymptoms
+from PhrApp.serializers import LocationSerializer, PatientSerializer, DoctorSerializer, StaffSerializer, InitialSymptomSerializer
 
 # Create your views here.
 # Patient API
@@ -210,6 +210,47 @@ def  staffApi(request, id=0):
         location = Locations.objects.get(id=staff.Location.id)
         staff.delete()
         location.delete()
+        return JsonResponse("Deleted Successfully",safe=False)
+        
+# InitialSymptoms API 
+@csrf_exempt
+def  symptomApi(request, id=0):
+    if request.method == 'GET':
+        if id!=0:
+            symptom = InitialSymptoms.objects.get(id=id)
+            symptoms_serializer = InitialSymptomSerializer(symptom, many=False)
+            return JsonResponse(symptoms_serializer.data,safe=False)
+        
+        symptoms = InitialSymptoms.objects.all()
+        symptoms_serializer = InitialSymptomSerializer(symptoms, many=True)
+
+        return JsonResponse(symptoms_serializer.data,safe=False)
+    elif request.method == 'POST':
+        post_data = JSONParser().parse(request)
+        staff = Staffs.objects.get(id=post_data['Staff']);
+        patients = Patients.objects.get(id=post_data['Patients']);
+        print(post_data)
+        new_symptom = InitialSymptoms.objects.create(
+            Date = post_data['Date'],
+            Staff = staff,
+            Patients = patients,
+            Symptoms = post_data['Symptoms'],
+            SymptomsDetail = post_data['SymptomsDetail']
+        )
+        new_symptom.save()
+        return JsonResponse("Added Successfully",safe=False)
+
+    elif request.method == 'PUT':
+        symptom_data = JSONParser().parse(request)
+        symptom = InitialSymptoms.objects.get(id=symptom_data['id'])
+        symptoms_serializer = InitialSymptomSerializer(symptom, data=symptom_data)
+        if symptoms_serializer.is_valid():
+            symptoms_serializer.save()
+            return JsonResponse("Updated Successfully",safe=False)
+        return JsonResponse("Failed to Update",safe=False)
+    elif request.method == 'DELETE':
+        symptom = InitialSymptoms.objects.get(id=id)
+        symptom.delete()
         return JsonResponse("Deleted Successfully",safe=False)
 
         

@@ -74,3 +74,10 @@ class Staffs(models.Model):
     Email = models.CharField(max_length=120, blank=False, null=False)
 
     
+class InitialSymptoms(models.Model):
+    id = models.AutoField(primary_key=True, unique=True)
+    Date = models.DateField()
+    Staff = models.ForeignKey(Staffs, on_delete=models.CASCADE)
+    Patients = models.ForeignKey(Patients, on_delete=models.CASCADE)
+    Symptoms = models.CharField(max_length=150)
+    SymptomsDetail = models.CharField(max_length=500)

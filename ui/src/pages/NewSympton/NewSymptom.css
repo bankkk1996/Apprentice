@@ -1,0 +1,70 @@
+.newSymptom{
+    flex: 4;
+    padding: 20px;
+}
+
+.newSymptomForm{
+    width: 65%;
+}
+
+.newSymptomPersonal,.newSymptomContact{
+    margin-bottom: 1.5rem;
+}
+
+.newSymptomTitlePersonal,.newSymptomTitleContact{
+    font-size: 20px;
+}
+.newSymptomItem{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.newSymptomItem2{
+    display: grid;
+    grid-template-columns: repeat(2, 49.26%);
+    gap: 1rem;
+}
+
+.newSymptomItem3{
+    display: grid;
+    grid-template-columns: repeat(3, 32.32%);
+    gap: 1rem;
+}
+.newSymptomItem4{
+    display: grid;
+    grid-template-columns: repeat(4, 23.87%);
+    gap: 1rem;
+}
+
+.newSymptomItem>label{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(151, 150, 150);
+}
+
+.newSymptomItem>input{
+    height: 30px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.newSymptomItem>textarea{
+    height: 120px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.newSymptomBT{
+    width: 200px;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    padding: 7px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}

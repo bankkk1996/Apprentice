@@ -5,9 +5,8 @@ import styles from './Navbar.module.scss'
 import { MdOutlineDashboard } from 'react-icons/md'
 
 import { AiOutlineArrowRight } from 'react-icons/ai'
-import { IoMdLogIn } from 'react-icons/io'
-import { FaReact, FaTimes ,FaUserAlt, FaUserMd, FaUsersCog, FaBars} from 'react-icons/fa'
-import { BsThreeDots } from 'react-icons/bs'
+import { FaTimes ,FaUserAlt, FaUserMd, FaUsersCog, FaBars} from 'react-icons/fa'
+import { BsThreeDots,BsCardList } from 'react-icons/bs'
 import { GiHospital } from 'react-icons/gi'
 
 
@@ -65,8 +64,7 @@ const Navbar = () => {
                     <span className={`${styles.categories} ${styles.second_category}`}>
                         {nav ? "More" : <BsThreeDots/>}
                     </span>
-                    <NavUrl url="/other1" icon={<IoMdLogIn/>} description="Auth" />
-                    <NavUrl url="/other2" icon={<FaReact/>} description="ReactJs" />
+                    <NavUrl url="/symptoms" icon={<BsCardList/>} description="Symptoms" />
                     
                 </ul>
                 {/* LOGOUT BUTTON */}
